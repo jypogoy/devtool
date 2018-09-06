@@ -17,7 +17,8 @@ class List extends Component {
                     accessor: 'body',
                     Cell: props => <span className='number'>{props.value}</span> // Custom cell components!
                 }
-            ]
+            ],
+            showPagination: false
         }
     }
 
@@ -32,6 +33,7 @@ class List extends Component {
             <ReactTable
             data={this.state.records}
             columns={this.state.columns}
+            filterable={true}
             />
         )
     }

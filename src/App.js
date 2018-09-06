@@ -14,17 +14,6 @@ class App extends Component {
   
     constructor(props) {
       super(props);
-      this.state = {
-        data: [{
-          name: 'Tanner Linsley',
-          age: 26,
-          friend: {
-            name: 'Jason Maurer',
-            age: 23,
-          }
-        }],
-        
-      }
     }
 
     render() {
