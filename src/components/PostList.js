@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
+
+// Import React Table
 import ReactTable from "react-table";
 import 'react-table/react-table.css';
 
-class List extends Component {
+class PostList extends Component {
 
     constructor(props) {
         super(props);
@@ -17,8 +19,7 @@ class List extends Component {
                     accessor: 'body',
                     Cell: props => <span className='number'>{props.value}</span> // Custom cell components!
                 }
-            ],
-            showPagination: false
+            ]
         }
     }
 
@@ -39,4 +40,4 @@ class List extends Component {
     }
 }
 
-export default List;
+export default PostList;
